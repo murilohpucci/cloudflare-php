@@ -9,8 +9,9 @@
 namespace Cloudflare\API\Adapter;
 
 use GuzzleHttp\Exception\RequestException;
+use Exception;
 
-class ResponseException extends \Exception
+class ResponseException extends Exception
 {
     /**
      * Generates a ResponseException from a Guzzle RequestException.
